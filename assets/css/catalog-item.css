@@ -11,7 +11,6 @@
 .catalog-item__block-img img {
     max-width: 247px;
     display: flex;
-    margin: -1px;
     height: 100%;
 }
 
@@ -90,7 +89,7 @@
 
 @media screen and (max-width: 768px) {
     .catalog-item {
-        max-width: 320px;
+        max-width: none;
         min-height: 120px;
     }
 

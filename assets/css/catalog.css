@@ -16,7 +16,7 @@
     justify-content: center;
     position: absolute;
     top: 50%;
-    transform: translateX(-50%);
+    transform: translateY(-50%);
     z-index: 10;
     cursor: pointer;
 }
@@ -40,15 +40,23 @@
 
 @media screen and (max-width: 768px) {
     .catalog__arrow-next {
-        right: -16px;
+        right: 0;
+    }
+
+    .catalog__item {
+        width: 320px;
     }
 
     .catalog__arrow-prev {
-        left: 15px;
+        left: 0;
     }
 
     .catalog__arrow-next, .catalog__arrow-prev {
         width: 33px;
         height: 33px;
+    }
+
+    .swiper__catalog {
+        position: relative;
     }
 }

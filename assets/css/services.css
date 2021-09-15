@@ -22,8 +22,8 @@
 
 @media screen and (max-width: 768px) {
     .services {
-        max-width: 280px;
-        margin: 40px auto;
+        max-width: none;
+        margin: 40px 20px;
     }
 
     .services__container {

@@ -20,7 +20,7 @@ function swiperNews () {
                 spaceBetween: 20
             },
             // when window width is >= 480px
-            480: {
+            768: {
                 spaceBetween: 46
             },
             // when window width is >= 640px

@@ -81,8 +81,8 @@
 
 @media screen and (max-width: 768px) {
     .news {
-        max-width: 280px;
-        margin: 40px auto;
+        max-width: none;
+        margin: 40px 20px;
         position: relative;
     }
 

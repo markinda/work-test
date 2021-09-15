@@ -25,6 +25,7 @@
     list-style: none;
     font-family: 'Circe', sans-serif;
     -webkit-tap-highlight-color: transparent;
+    outline: none !important;
 }
 
 img {
