@@ -66,3 +66,27 @@
     border: 1px solid #747474;
     color: #747474;
 }
+
+
+@media screen and (max-width: 768px) {
+    .form__group {
+        display: block;
+    }
+
+    .form__item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
+    .form__input {
+        padding: 8px;
+    }
+
+    .form__btn {
+        width: 100%;
+        justify-content: center;
+        margin-top: 16px;
+        padding: 12px 0;
+    }
+}

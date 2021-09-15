@@ -24,3 +24,16 @@
         padding: 28px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .content-form {
+        margin-top: 20px;
+        padding: 16px;
+    }
+
+    .content-form__title {
+        margin-bottom: 12px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

@@ -1,0 +1,122 @@
+.catalog-item {
+    display: flex;
+    max-width: 630px;
+    position: relative;
+}
+.catalog-item__block-img {
+
+    /*overflow: hidden;*/
+}
+
+.catalog-item__block-img img {
+    max-width: 247px;
+    display: flex;
+    margin: -1px;
+    height: 100%;
+}
+
+.catalog-item__block-text {
+    padding: 33px 42px;
+}
+
+.catalog-item__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 8px;
+}
+
+.catalog-item__desc {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.catalog-item__btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.catalog-item__btn svg {
+    transition: .4s;
+}
+
+.catalog-item__btn:hover svg {
+    transform: translateX(6px);
+    transition: .4s;
+}
+
+.catalog-item__text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FF650C;
+    margin-left: 26px;
+    display: block;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1024px) {
+    .catalog-item {
+        display: flex;
+        max-width: 470px;
+        position: relative;
+    }
+
+    .catalog-item__block-img img {
+       width: 164px;
+    }
+
+    .catalog-item__block-text {
+        padding: 33px 24px 65px 16px;
+    }
+
+    .catalog-item__title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .catalog-item__desc {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .catalog-item {
+        max-width: 320px;
+        min-height: 120px;
+    }
+
+    .catalog-item__block-img img {
+        width: 91px;
+    }
+
+    .catalog-item__desc {
+        display: none;
+    }
+
+    .catalog-item__block-text {
+        padding: 21px 54px 50px 38px;
+    }
+
+    .catalog-item__title {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .catalog-item__btn {
+        width: 199px;
+    }
+
+    .catalog-item__text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

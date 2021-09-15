@@ -13,6 +13,7 @@
 .file__list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .file__item {
@@ -120,5 +121,21 @@
 
     .form__btn {
         padding: 13px 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .file {
+        margin-top: 16px;
+    }
+
+    .file__info {
+        display: block;
+        margin-top: 16px;
+    }
+
+    .file__label {
+        width: 100%;
+        text-align: center;
     }
 }

@@ -11,6 +11,9 @@
 @import "form.css";
 @import "file.css";
 @import "brand.css";
+@import "accordion.css";
+@import "catalog-item.css";
+@import "catalog.css";
 
 
 *, :after, :before {

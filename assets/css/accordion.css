@@ -1,0 +1,63 @@
+
+
+.accordion__btn {
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    display: none;
+}
+
+.accordion__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #747474;
+}
+
+.accordion__arrow {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.accordion__arrow svg rect {
+    transition: .4s;
+}
+
+.accordion__list {
+    transition: .4s;
+    height: 100%;
+}
+
+.accordion--active .accordion__list {
+    transition: .4s;
+}
+
+.accordion--active .accordion__arrow svg {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 768px) {
+    .accordion {
+        overflow: hidden;
+        max-width: 1256px;
+        margin: 0 auto;
+        padding: 16px 0;
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+    .accordion__list {
+        transition: .4s;
+        max-height: 0;
+    }
+
+    .accordion--active .accordion__list {
+       max-height: 1000px;
+    }
+
+    .accordion__btn {
+        display: flex;
+    }
+}

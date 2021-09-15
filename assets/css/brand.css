@@ -12,7 +12,6 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 0;
     content: "";
     width: 100px;
     height: 100%;
@@ -24,7 +23,6 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 0;
     content: "";
     width: 100px;
     z-index: 2;
@@ -73,7 +71,7 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
-    color: #707070;
+    color: #707070; cursor: pointer;
 }
 
 .brand__name--active {
@@ -94,6 +92,11 @@
 .brand__swiper-slide {
     width: auto;
 }
+
+.brand__btn-svg--m {
+    display: none;
+}
+
 
 @media screen and (max-width: 1024px) {
     .brand {
@@ -121,5 +124,53 @@
     .brand__name {
         font-size: 18px;
         line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .brand__btn-svg--m {
+        display: block;
+        margin-left: 11px;
+    }
+
+    .brand__btn-svg--d {
+        display: none;
+    }
+
+    .brand__slider::before {
+        width: 30px;
+    }
+
+    .brand__slider::after {
+        width: 30px;
+    }
+
+    .brand__title {
+        max-width: 280px;
+    }
+
+    .brand__btn {
+        max-width: 280px;
+    }
+
+    .brand__btn-text {
+        margin-left: 0;
+    }
+
+    .brand {
+        padding: 16px 0;
+    }
+    .brand__item:first-of-type {
+        padding-left: 20px;
+    }
+
+    .brand__item {
+        padding-right: 16px;
+        margin-right: 16px;
+        border-right: 1px solid #CCCCCC;
+    }
+
+    .brand__list {
+        margin: 12px 0;
     }
 }

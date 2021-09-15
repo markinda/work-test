@@ -19,3 +19,27 @@
         margin: 68px auto;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .services {
+        max-width: 280px;
+        margin: 40px auto;
+    }
+
+    .services__container {
+        display: flex;
+        overflow: hidden;
+        overflow-x: auto;
+    }
+
+    .services__container::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    .services__row {
+        flex-wrap: nowrap;
+        margin-right: 16px;
+    }
+}

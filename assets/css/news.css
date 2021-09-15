@@ -78,3 +78,38 @@
         width: 12px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .news {
+        max-width: 280px;
+        margin: 40px auto;
+        position: relative;
+    }
+
+    .news__arrow-item {
+        width: 33px;
+        height: 33px;
+        background: #F68E56;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100;
+    }
+
+    .news__arrow-item svg {
+        width: 8px;
+    }
+
+    .news__arrow-item svg path {
+        stroke: #fff;
+    }
+
+    .news__arrow-item-prev {
+        position: absolute;
+        left: -20px;
+    }
+
+    .news__arrow-item-next {
+        position: absolute;
+        right: -20px;
+    }
+}

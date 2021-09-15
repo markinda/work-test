@@ -99,3 +99,25 @@
         bottom: -9px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .tabs {
+        background: transparent;
+        max-width: 280px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .tabs__list {
+        display: none;
+    }
+
+    .tabs__content {
+        display: block;
+        padding-top: 16px;
+    }
+
+    .tabs__border {
+        display: none;
+    }
+}

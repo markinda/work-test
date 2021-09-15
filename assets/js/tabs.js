@@ -1,30 +1,28 @@
 function tabs() {
 
-    const tabs = document.querySelector('.tabs');
-    const tabsBtn = document.querySelectorAll('.tabs__btn');
-    const tabsContent = document.querySelectorAll('.tabs__content');
+    const tabs = document.querySelectorAll('.tabs');
 
-    if (tabs) {
-        tabs.addEventListener('click', (e) => {
+    tabs.forEach(itemtabs => {
+        if (itemtabs) {
 
-            if (e.target.classList.contains('tabs__btn')) {
+            const btn = itemtabs.querySelectorAll('.tabs__btn')
+            const tabsContent = itemtabs.querySelectorAll('.tabs__content')
 
-                const tabsPath = e.target.dataset.tabsPath;
+            btn.forEach(i => {
 
-                tabsBtn.forEach(el => {el.classList.remove('tabs__btn--active')});
+                i.addEventListener('click', () => {
 
-                document.querySelector(`[data-tabs-path="${tabsPath}"]`).classList.add('tabs__btn--active');
+                    btn.forEach(el => {el.classList.remove('tabs__btn--active')});
+                    i.classList.add('tabs__btn--active');
+                    const path = i.dataset.tabsPath;
 
-                tabsHandler(tabsPath);
-            }
-        });
-    }
+                    tabsContent.forEach(el => {el.classList.remove('tabs__content--active')})
 
-    const tabsHandler = (path) => {
-        tabsContent.forEach(el => {el.classList.remove('tabs__content--active')});
-
-        document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tabs__content--active');
-    };
+                    document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tabs__content--active');
+                });
+            });
+        }
+    });
 }
 
 tabs();

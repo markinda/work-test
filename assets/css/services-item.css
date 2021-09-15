@@ -110,3 +110,13 @@
         margin-bottom: 24px;
     }
 }
+
+@media screen and (max-width: 768px) {
+   .services-item {
+       width: 280px;
+   }
+
+    .services-item__item {
+        margin-bottom: 4px;
+    }
+}
