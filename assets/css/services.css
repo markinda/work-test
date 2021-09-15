@@ -1,0 +1,21 @@
+.services {
+    max-width: 1265px;
+    margin: 80px auto;
+}
+
+.services__container {
+
+}
+
+.services__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    .services {
+        max-width: 944px;
+        margin: 68px auto;
+    }
+}

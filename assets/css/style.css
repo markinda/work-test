@@ -1,0 +1,39 @@
+@import "swiper-bundle.min.css";
+@import "root.css";
+@import "fonts.css";
+@import "services.css";
+@import "services-item.css";
+@import "news.css";
+@import "news-item.css";
+@import "tabs.css";
+@import "content.css";
+@import "content-form.css";
+@import "form.css";
+@import "file.css";
+@import "brand.css";
+
+
+*, :after, :before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--color-black);
+    list-style: none;
+    font-family: 'Circe', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    display: block;
+}
+
+.page {
+    overflow: hidden;
+    max-width: 1920px;
+}
+
+/* style main */
+.main {
+    background: var(--color-white);
+}
